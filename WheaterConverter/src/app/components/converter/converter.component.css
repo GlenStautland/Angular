@@ -1,0 +1,26 @@
+.converter{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter .card{
+    min-height: 20vh;
+    min-width: 80vh;
+    background-color: rgb(128, 216, 238);
+    border-radius: 5px;
+}
+.btnSubmit{
+   
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 10px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 10px solid #a94442; /* red */
+  }
+
+  

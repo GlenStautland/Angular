@@ -1,0 +1,14 @@
+
+<div class="row">
+    <input class="col-6 offset-3 mt-2 mb-2" type="text" name="searchImage" [(ngModel)]="searchImage" placeholder="Search" (ngModelChange)="search()" aria-label="Search">
+    <button class="col-4 offset-4 btn btn-outline-success mb-4" type="submit">Search</button>
+</div>
+<div class="row">
+    <tbody>
+        <tr *ngFor="let dataItem of ImageList">
+            <img class="image" src={{dataItem.urls.raw}} alt="..." class="img-thumbnail">
+            <p>{{dataItem.alt_description}}</p>
+        </tr>   
+        
+    </tbody>
+</div>
